@@ -338,3 +338,19 @@ html, body {
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
+
+.heart {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    max-width: 100%;
+
+    background: url("/src/img/heart-png.png") ;
+  }
+  .heart.liked {
+    background: url("/src/img/heartlike.png") ;
+  }
+
+  
+
+  
