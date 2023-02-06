@@ -102,12 +102,4 @@ function updateCartTotal() {
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
 
-var btnvar1 = document.getElementById('btnh1');
-function Toggle(){
-    if (btnvar1.style.color == "red") {
-        btnvar1.style.color = "grey"
-    }
-    else {
-        btnvar1.style.color = "red"
-    }
-}
+

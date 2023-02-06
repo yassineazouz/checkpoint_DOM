@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
-@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
 
 @font-face {
     font-family: "Booter - Zero Zero";
@@ -9,7 +8,7 @@
     font-style: normal;
 }
 
-* {
+*{
     box-sizing: border-box;
     font-family: Raleway;
     color: #777;
@@ -54,7 +53,7 @@ body {
 
 .main-header {
     background-color: rgba(0, 0, 0, .6);
-    background-image: url("Images/Header Background.jpg");
+    background-image: url("/src/img/Header\ Background.jpg");
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 30px;
@@ -129,6 +128,7 @@ body {
     vertical-align: middle;
     padding: .67em .67em;
     cursor: pointer;
+    
 }
 
 .btn-header {
@@ -342,22 +342,41 @@ body {
 }
 
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
 
-.btns {
-
-    text-align: center;
-    vertical-align: middle;
-    padding: .67em .67em;
-    cursor: pointer;
-    border: none;
-    color: grey;
-    background: transparent;
-    outline: none;
-    font-size: 20px;
-    display: flex;
-
+.content.heart-active{
+  border-color: #f9b9c4;
+  background: #fbd0d8;
+}
+.heart{
+  position: absolute;
+  background: url("/src/img/img.png") no-repeat;
+  background-position: left;
+  background-size: 2900%;
+  height: 90px;
+  width: 90px;
+ 
+  transform: translate(-50%,-50%);
 }
 
-.btns i:hover {
-    cursor: pointer;
+
+
+.numb.heart-active:before{
+  content: '13';
+  color: #000;
+}
+.text.heart-active{
+  color: #000;
+}
+.heart.heart-active{
+  animation: animate .8s steps(28) 1;
+  background-position: right;
+}
+@keyframes animate {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
 }
